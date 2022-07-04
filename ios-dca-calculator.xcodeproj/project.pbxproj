@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705DF840287349F9000648AC /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DF83F287349F9000648AC /* SearchResults.swift */; };
+		709724E728723D1D00388781 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709724E628723D1D00388781 /* Key.swift */; };
 		70E7EDF428718B5500350328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7EDF328718B5500350328 /* AppDelegate.swift */; };
 		70E7EDF628718B5500350328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7EDF528718B5500350328 /* SceneDelegate.swift */; };
 		70E7EDF828718B5500350328 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7EDF728718B5500350328 /* SearchTableViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		705DF83F287349F9000648AC /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		709724E628723D1D00388781 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		70E7EDF028718B5500350328 /* ios-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E7EDF328718B5500350328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E7EDF528718B5500350328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		709724E528723D0B00388781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				709724E628723D1D00388781 /* Key.swift */,
+				705DF83F287349F9000648AC /* SearchResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		70E7EDE728718B5500350328 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +90,9 @@
 		70E7EDF228718B5500350328 /* ios-dca-calculator */ = {
 			isa = PBXGroup;
 			children = (
-				70E7EE0A287196D200350328 /* view */,
-				70E7EE09287196CC00350328 /* controller */,
+				709724E528723D0B00388781 /* Model */,
+				70E7EE0A287196D200350328 /* View */,
+				70E7EE09287196CC00350328 /* Controller */,
 				70E7EDF328718B5500350328 /* AppDelegate.swift */,
 				70E7EDF528718B5500350328 /* SceneDelegate.swift */,
 				70E7EDF928718B5500350328 /* Main.storyboard */,
@@ -89,20 +103,20 @@
 			path = "ios-dca-calculator";
 			sourceTree = "<group>";
 		};
-		70E7EE09287196CC00350328 /* controller */ = {
+		70E7EE09287196CC00350328 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				70E7EDF728718B5500350328 /* SearchTableViewController.swift */,
 			);
-			path = controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		70E7EE0A287196D200350328 /* view */ = {
+		70E7EE0A287196D200350328 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				70E7EE0B287196ED00350328 /* SearchTableViewCell.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D09B7BE766F5BC0D6F3CA1F5 /* Frameworks */ = {
@@ -230,8 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E7EDF828718B5500350328 /* SearchTableViewController.swift in Sources */,
+				709724E728723D1D00388781 /* Key.swift in Sources */,
 				70E7EE0C287196ED00350328 /* SearchTableViewCell.swift in Sources */,
 				70E7EDF428718B5500350328 /* AppDelegate.swift in Sources */,
+				705DF840287349F9000648AC /* SearchResults.swift in Sources */,
 				70E7EDF628718B5500350328 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
