@@ -11,7 +11,7 @@ struct SearchResults: Decodable {
     
     let items: [SearchResult]
     
-    enum codingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case items = "bestMatches"
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		705DF840287349F9000648AC /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DF83F287349F9000648AC /* SearchResults.swift */; };
+		705DF84328734CEA000648AC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DF84228734CEA000648AC /* APIService.swift */; };
 		709724E728723D1D00388781 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709724E628723D1D00388781 /* Key.swift */; };
 		70E7EDF428718B5500350328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7EDF328718B5500350328 /* AppDelegate.swift */; };
 		70E7EDF628718B5500350328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7EDF528718B5500350328 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		705DF83F287349F9000648AC /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		705DF84228734CEA000648AC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		709724E628723D1D00388781 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		70E7EDF028718B5500350328 /* ios-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E7EDF328718B5500350328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		705DF84128734CDB000648AC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				705DF84228734CEA000648AC /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		709724E528723D0B00388781 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		70E7EDF228718B5500350328 /* ios-dca-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				705DF84128734CDB000648AC /* Service */,
 				709724E528723D0B00388781 /* Model */,
 				70E7EE0A287196D200350328 /* View */,
 				70E7EE09287196CC00350328 /* Controller */,
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E7EDF828718B5500350328 /* SearchTableViewController.swift in Sources */,
+				705DF84328734CEA000648AC /* APIService.swift in Sources */,
 				709724E728723D1D00388781 /* Key.swift in Sources */,
 				70E7EE0C287196ED00350328 /* SearchTableViewCell.swift in Sources */,
 				70E7EDF428718B5500350328 /* AppDelegate.swift in Sources */,

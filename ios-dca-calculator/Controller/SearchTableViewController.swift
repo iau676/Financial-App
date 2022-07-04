@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class SearchTableViewController: UITableViewController {
     
@@ -18,15 +19,36 @@ class SearchTableViewController: UITableViewController {
         sc.searchBar.autocapitalizationType = .allCharacters
         return sc
     }()
+    
+    private let apiService = APIService()
+    private var subscribers = Set<AnyCancellable>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        performSearch()
     }
     
     private func setupNavigationBar() {
         navigationItem.searchController = searchController
     }
+    
+    func performSearch() {
+        
+        apiService.fetchSymbolsPublisher(keywords: "AMZN").sink { (completion) in
+            switch completion {
+            case .failure(let error):
+                print(error)
+            case .finished: break
+            }
+        } receiveValue: { (searchResults) in
+            print(searchResults)
+        }.store(in: &subscribers)
+
+        
+    }
+    
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
