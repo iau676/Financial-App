@@ -7,8 +7,9 @@
 
 import UIKit
 import Combine
+import MBProgressHUD
 
-class SearchTableViewController: UITableViewController {
+class SearchTableViewController: UITableViewController, UIAnimatable {
     
     private enum Mode {
         case onboarding
@@ -51,7 +52,9 @@ class SearchTableViewController: UITableViewController {
         $searchQuery
             .debounce(for: .milliseconds(750), scheduler: RunLoop.main, options: nil)
             .sink { [unowned self] (searchQuery) in
+                showLoadingAnimation()
                 self.apiService.fetchSymbolsPublisher(keywords: searchQuery).sink { (completion) in
+                    hideLoadingAnimation()
                     switch completion {
                     case .failure(let error):
                         print(error)
