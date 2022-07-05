@@ -22,34 +22,36 @@ class SearchTableViewController: UITableViewController {
     
     private let apiService = APIService()
     private var subscribers = Set<AnyCancellable>()
+    @Published private var searchQuery = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
-        performSearch()
+        observeForm()
     }
     
     private func setupNavigationBar() {
         navigationItem.searchController = searchController
     }
     
-    func performSearch() {
+    private func observeForm() {
         
-        apiService.fetchSymbolsPublisher(keywords: "AMZN").sink { (completion) in
-            switch completion {
-            case .failure(let error):
-                print(error)
-            case .finished: break
-            }
-        } receiveValue: { (searchResults) in
-            print(searchResults)
-        }.store(in: &subscribers)
-
+        $searchQuery
+            .debounce(for: .milliseconds(750), scheduler: RunLoop.main, options: nil)
+            .sink { [unowned self] (searchQuery) in
+                self.apiService.fetchSymbolsPublisher(keywords: searchQuery).sink { (completion) in
+                    switch completion {
+                    case .failure(let error):
+                        print(error)
+                    case .finished: break
+                    }
+                } receiveValue: { (searchResults) in
+                    print(searchResults)
+                }.store(in: &self.subscribers)
+            }.store(in: &subscribers)
         
     }
-    
-    
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -64,7 +66,8 @@ class SearchTableViewController: UITableViewController {
 extension SearchTableViewController: UISearchResultsUpdating, UISearchControllerDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
-        
+        guard let searchQuery = searchController.searchBar.text, !searchQuery.isEmpty else { return }
+        self.searchQuery = searchQuery
     }
     
 }
