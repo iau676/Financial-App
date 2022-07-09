@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="213.04347826086959" y="-141.29464285714286"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Calculator Table View Controller-->
         <scene sceneID="weY-MF-He5">
             <objects>
-                <tableViewController id="Oee-SI-cND" sceneMemberID="viewController">
+                <tableViewController id="Oee-SI-cND" customClass="CalculatorTableViewController" customModule="ios_dca_calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="0CV-eD-ZIl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,6 +391,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="5eo-m2-0ZH"/>
                     <connections>
+                        <outlet property="nameLabel" destination="5M1-T1-I5N" id="bTv-Ga-OeA"/>
+                        <outlet property="symbolLabel" destination="oWp-Hy-G8l" id="cV3-u2-yEo"/>
                         <segue destination="c82-1a-Aor" kind="show" id="BBc-Qd-iEb"/>
                     </connections>
                 </tableViewController>
