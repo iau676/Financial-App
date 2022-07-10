@@ -11,6 +11,7 @@
 		705DF84328734CEA000648AC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DF84228734CEA000648AC /* APIService.swift */; };
 		705DF84528748914000648AC /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DF84428748914000648AC /* SearchPlaceholderView.swift */; };
 		705DF84828748FDC000648AC /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DF84728748FDC000648AC /* UIAnimatable.swift */; };
+		7061BE0E287B566800352B33 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7061BE0D287B566800352B33 /* UITextField+Extensions.swift */; };
 		709724E728723D1D00388781 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709724E628723D1D00388781 /* Key.swift */; };
 		70AC2C19287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC2C18287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift */; };
 		70DFBF3C2879C24E004A591E /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DFBF3B2879C24E004A591E /* CalculatorTableViewController.swift */; };
@@ -32,6 +33,7 @@
 		705DF84228734CEA000648AC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		705DF84428748914000648AC /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
 		705DF84728748FDC000648AC /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		7061BE0D287B566800352B33 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		709724E628723D1D00388781 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		70AC2C18287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		70DFBF3B2879C24E004A591E /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				70DFBF402879CAF7004A591E /* String+Extensions.swift */,
+				7061BE0D287B566800352B33 /* UITextField+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				70DFBF3C2879C24E004A591E /* CalculatorTableViewController.swift in Sources */,
 				709724E728723D1D00388781 /* Key.swift in Sources */,
 				70E7EE0C287196ED00350328 /* SearchTableViewCell.swift in Sources */,
+				7061BE0E287B566800352B33 /* UITextField+Extensions.swift in Sources */,
 				70DFBF3E2879C407004A591E /* Asset.swift in Sources */,
 				70E7EDF428718B5500350328 /* AppDelegate.swift in Sources */,
 				705DF84828748FDC000648AC /* UIAnimatable.swift in Sources */,
