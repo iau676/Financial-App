@@ -388,13 +388,18 @@
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="5eo-m2-0ZH"/>
                     <connections>
+                        <outlet property="annualReturnLabel" destination="O8P-fi-Ie2" id="9Df-HB-Wja"/>
+                        <outlet property="currentValueLabel" destination="ao9-uo-CwK" id="Mgf-yE-VRC"/>
                         <outlet property="dateSlider" destination="8VA-il-0Kl" id="WRB-pw-wdk"/>
+                        <outlet property="gainLabel" destination="QGw-zs-Jb4" id="MQh-fb-LEk"/>
                         <outlet property="initialDateOfInvestmentTextField" destination="w2g-bS-aT3" id="SZW-Qs-bGu"/>
                         <outlet property="initialInvestmentAmountTextField" destination="j6X-wb-vNQ" id="jlg-Xo-awc"/>
                         <outlet property="investmentAmountCurrencyLabel" destination="3ND-u3-PGm" id="J0W-4k-Nml"/>
+                        <outlet property="investmentAmountLabel" destination="jdQ-t8-uDT" id="K1N-Wr-7dY"/>
                         <outlet property="monthlyDollarCostAveragingTextField" destination="Fv1-pP-Iae" id="8Iy-qi-1tt"/>
                         <outlet property="nameLabel" destination="5M1-T1-I5N" id="bTv-Ga-OeA"/>
                         <outlet property="symbolLabel" destination="oWp-Hy-G8l" id="cV3-u2-yEo"/>
+                        <outlet property="yieldLabel" destination="hb6-X3-N4t" id="B3I-6y-eIw"/>
                         <outletCollection property="currencyLabels" destination="csV-vY-QAJ" collectionClass="NSMutableArray" id="7Hl-Zm-Uje"/>
                         <outletCollection property="currencyLabels" destination="JL4-ws-5wf" collectionClass="NSMutableArray" id="hES-us-bdB"/>
                         <outletCollection property="currencyLabels" destination="zP7-0l-VG1" collectionClass="NSMutableArray" id="cVe-ZM-2K5"/>
