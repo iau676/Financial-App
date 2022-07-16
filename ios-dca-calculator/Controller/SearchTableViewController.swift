@@ -44,6 +44,7 @@ class SearchTableViewController: UITableViewController, UIAnimatable {
     }
     
     private func setupTableView() {
+        tableView.isScrollEnabled = false
         tableView.tableFooterView = UIView()
     }
     
@@ -64,6 +65,7 @@ class SearchTableViewController: UITableViewController, UIAnimatable {
                 } receiveValue: { (searchResults) in
                     self.searchResults = searchResults
                     self.tableView.reloadData()
+                    self.tableView.isScrollEnabled = true
                 }.store(in: &self.subscribers)
             }.store(in: &subscribers)
         
