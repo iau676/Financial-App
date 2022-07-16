@@ -24,4 +24,16 @@ extension Double {
         return formatter.string(from: self as NSNumber) ?? twoDecimalPlaceString
     }
     
+    func toCurrencyFormat(hasDollarSymbol: Bool = true, hasDecimalPlaces: Bool = true) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        if hasDollarSymbol == false {
+            formatter.currencySymbol = ""
+        }
+        if hasDecimalPlaces == false {
+            formatter.maximumFractionDigits = 0
+        }
+        return formatter.string(from: self as NSNumber) ?? twoDecimalPlaceString
+    }
+    
 }
