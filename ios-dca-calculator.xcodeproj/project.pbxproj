@@ -30,6 +30,7 @@
 		70E7EE0028718B5900350328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E7EDFE28718B5900350328 /* LaunchScreen.storyboard */; };
 		70E7EE0828718CC300350328 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 70E7EE0728718CC300350328 /* Podfile */; };
 		70E7EE0C287196ED00350328 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7EE0B287196ED00350328 /* SearchTableViewCell.swift */; };
+		70FB8A9D2882FE4A00DC1337 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FB8A9C2882FE4A00DC1337 /* UIColor+Extension.swift */; };
 		99B3451BCD32F3665DA65400 /* Pods_ios_dca_calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9561349D6117693FAB441FC /* Pods_ios_dca_calculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		70E7EE0128718B5900350328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E7EE0728718CC300350328 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		70E7EE0B287196ED00350328 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		70FB8A9C2882FE4A00DC1337 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B0175899878C23618412C613 /* Pods-ios-dca-calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.release.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.release.xcconfig"; sourceTree = "<group>"; };
 		C3ADB2FC4BEC6C92DA70E886 /* Pods-ios-dca-calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.debug.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		F9561349D6117693FAB441FC /* Pods_ios_dca_calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dca_calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				70B22122287DA86100A5364D /* Date+Extensions.swift */,
 				7090C405287EE8B300AFD3AF /* Int+Extensions.swift */,
 				70C22E88288178A8005E197B /* Double+Extensions.swift */,
+				70FB8A9C2882FE4A00DC1337 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				705DF840287349F9000648AC /* SearchResults.swift in Sources */,
 				70E7EDF628718B5500350328 /* SceneDelegate.swift in Sources */,
 				70AC2C19287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift in Sources */,
+				70FB8A9D2882FE4A00DC1337 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
