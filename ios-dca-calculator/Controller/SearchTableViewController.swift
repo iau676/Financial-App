@@ -143,8 +143,4 @@ extension SearchTableViewController: UISearchResultsUpdating, UISearchController
         mode = .search
     }
     
-    func willDismissSearchController(_ searchController: UISearchController) {
-        mode = .onboarding
-    }
-    
 }
