@@ -14,10 +14,12 @@ class ios_dca_calculatorTests: XCTestCase {
 
     override func setUpWithError() throws {
         try super.setUpWithError()
+        sut = DCAService()
     }
 
     override func tearDownWithError() throws {
         try super.tearDownWithError()
+        sut = nil
     }
 
     func testExample() throws {
@@ -27,12 +29,32 @@ class ios_dca_calculatorTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testInvestmentAmount_whenDCAIsUsed_expectResult() {
+        // given
+        let initialInvestmentAmount: Double = 500
+        let monthlyDollarCostAveragingAmount: Double = 300
+        let initialDateOfInvestmentIndex = 4 // (4 months ago)
+        // when
+        let investmentAmount = sut.getInvestmentAmount(initialInvestmentAmount: initialInvestmentAmount,
+                                                       monthlyDollarCostAveragingAmount: monthlyDollarCostAveragingAmount,
+                                                       initialDateOfInvestmentIndex: initialDateOfInvestmentIndex)
+        // then
+        XCTAssertEqual(investmentAmount, 1700)
     }
+    
+    func testInvestmentAmount_whenDCAIsNotUsed_expectResult() {
+        // given
+        let initialInvestmentAmount: Double = 500
+        let monthlyDollarCostAveragingAmount: Double = 0
+        let initialDateOfInvestmentIndex = 4 // (4 months ago)
+        // when
+        let investmentAmount = sut.getInvestmentAmount(initialInvestmentAmount: initialInvestmentAmount,
+                                                       monthlyDollarCostAveragingAmount: monthlyDollarCostAveragingAmount,
+                                                       initialDateOfInvestmentIndex: initialDateOfInvestmentIndex)
+        // then
+        XCTAssertEqual(investmentAmount, 500)
+    }
+
 
 }
