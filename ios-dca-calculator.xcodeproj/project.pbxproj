@@ -14,6 +14,7 @@
 		7061BE0E287B566800352B33 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7061BE0D287B566800352B33 /* UITextField+Extensions.swift */; };
 		7090C406287EE8B400AFD3AF /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090C405287EE8B300AFD3AF /* Int+Extensions.swift */; };
 		709724E728723D1D00388781 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709724E628723D1D00388781 /* Key.swift */; };
+		70A5E85C288412740041A191 /* ios_dca_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A5E85B288412740041A191 /* ios_dca_calculatorTests.swift */; };
 		70AC2C19287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC2C18287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift */; };
 		70B22123287DA86100A5364D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B22122287DA86100A5364D /* Date+Extensions.swift */; };
 		70C22E8728817458005E197B /* DCAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C22E8628817458005E197B /* DCAService.swift */; };
@@ -34,6 +35,16 @@
 		99B3451BCD32F3665DA65400 /* Pods_ios_dca_calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9561349D6117693FAB441FC /* Pods_ios_dca_calculator.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		70A5E85D288412740041A191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E7EDE828718B5500350328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E7EDEF28718B5500350328;
+			remoteInfo = "ios-dca-calculator";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		705DF83F287349F9000648AC /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		705DF84228734CEA000648AC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -42,6 +53,8 @@
 		7061BE0D287B566800352B33 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		7090C405287EE8B300AFD3AF /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		709724E628723D1D00388781 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		70A5E859288412740041A191 /* ios-dca-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-dca-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A5E85B288412740041A191 /* ios_dca_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_dca_calculatorTests.swift; sourceTree = "<group>"; };
 		70AC2C18287736DB00A084EE /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		70B22122287DA86100A5364D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		70C22E8628817458005E197B /* DCAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAService.swift; sourceTree = "<group>"; };
@@ -67,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		70A5E856288412740041A191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70E7EDED28718B5500350328 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +135,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		70A5E85A288412740041A191 /* ios-dca-calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				70A5E85B288412740041A191 /* ios_dca_calculatorTests.swift */,
+			);
+			path = "ios-dca-calculatorTests";
+			sourceTree = "<group>";
+		};
 		70DFBF3F2879CA90004A591E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +161,7 @@
 			children = (
 				70E7EE0728718CC300350328 /* Podfile */,
 				70E7EDF228718B5500350328 /* ios-dca-calculator */,
+				70A5E85A288412740041A191 /* ios-dca-calculatorTests */,
 				70E7EDF128718B5500350328 /* Products */,
 				0283F7769517A7EF533C8AC8 /* Pods */,
 				D09B7BE766F5BC0D6F3CA1F5 /* Frameworks */,
@@ -143,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				70E7EDF028718B5500350328 /* ios-dca-calculator.app */,
+				70A5E859288412740041A191 /* ios-dca-calculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +226,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		70A5E858288412740041A191 /* ios-dca-calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A5E861288412740041A191 /* Build configuration list for PBXNativeTarget "ios-dca-calculatorTests" */;
+			buildPhases = (
+				70A5E855288412740041A191 /* Sources */,
+				70A5E856288412740041A191 /* Frameworks */,
+				70A5E857288412740041A191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70A5E85E288412740041A191 /* PBXTargetDependency */,
+			);
+			name = "ios-dca-calculatorTests";
+			productName = "ios-dca-calculatorTests";
+			productReference = 70A5E859288412740041A191 /* ios-dca-calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		70E7EDEF28718B5500350328 /* ios-dca-calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70E7EE0428718B5900350328 /* Build configuration list for PBXNativeTarget "ios-dca-calculator" */;
@@ -225,6 +273,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					70A5E858288412740041A191 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 70E7EDEF28718B5500350328;
+					};
 					70E7EDEF28718B5500350328 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -244,11 +296,19 @@
 			projectRoot = "";
 			targets = (
 				70E7EDEF28718B5500350328 /* ios-dca-calculator */,
+				70A5E858288412740041A191 /* ios-dca-calculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		70A5E857288412740041A191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70E7EDEE28718B5500350328 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +365,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		70A5E855288412740041A191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A5E85C288412740041A191 /* ios_dca_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70E7EDEC28718B5500350328 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +402,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		70A5E85E288412740041A191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E7EDEF28718B5500350328 /* ios-dca-calculator */;
+			targetProxy = 70A5E85D288412740041A191 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		70E7EDF928718B5500350328 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -354,6 +430,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		70A5E85F288412740041A191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UA5J3LA7RU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibrahimuysal.ios-dca-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-dca-calculator.app/ios-dca-calculator";
+			};
+			name = Debug;
+		};
+		70A5E860288412740041A191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UA5J3LA7RU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibrahimuysal.ios-dca-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-dca-calculator.app/ios-dca-calculator";
+			};
+			name = Release;
+		};
 		70E7EE0228718B5900350328 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +643,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		70A5E861288412740041A191 /* Build configuration list for PBXNativeTarget "ios-dca-calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A5E85F288412740041A191 /* Debug */,
+				70A5E860288412740041A191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		70E7EDEB28718B5500350328 /* Build configuration list for PBXProject "ios-dca-calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
